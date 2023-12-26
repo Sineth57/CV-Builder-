@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-poppins);
+    margin-top: 80px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.text{
+    color: var(--clr-dark);
+    opacity: 0.9;
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+/* navigation bar */
+.navbar{
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.099) 0px 3px 8px;
+
+}
+
+.navbar .container{
+    width: 100%;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+}
+.navbar-brand-text{
+    color: rgb(107, 107, 225);
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar-brand-text span{
+    color:rgb(0, 0, 0);
+}
+.navbar-brand-icon{
+    width: 25px;
+    margin-right: 6px;
+    opacity: 0.8;
+}
+.brand-and-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* header */
+.header {
+    padding: 2rem 0; /* Adjust padding as needed */
+    text-align: center;
+    max-height: 100%;
+    background-color: #edf0f9;
+}
+
+.header h5 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -1px;
+}
+
+.header-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 60px;
+}
+
+/* Adjust styles for left and right sections as needed */
+.header-body .left {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px; /* Adjust spacing between left and right sections */
+}
+
+.header-body .right {
+    flex: 1;
+    text-align: right;
+}
+
+.header-body .right .headerimg{
+    /* max-width: 500px;
+    height: auto;
+    max-height: 500px; */
+}
+
+/* Styles for other elements within the left section */
+.header-body .left h2 {
+    font-size: 45px;
+    letter-spacing: .5px;
+}
+
+.header-body .left .left-para {
+    margin-top: 13px;
+    letter-spacing: .9px;
+    margin-top: 20px;
+    color: #555; /* Adjust color as needed */
+}
+
+.header-body .left .head-btn {
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow added */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+}
+
+/* Hover effect */
+.header-body .left .head-btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Move the button slightly up on hover */
+}
+
+.header-body .right .navbar-brand-icon {
+    width: 100px; /* Adjust image size as needed */
+    height: auto;
+}
+
+
+/* section one */
+.sectionone {
+    padding: 10rem 0;
+}
+
+.sectionone .sectionone-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.sectionone .left {
+    flex: 1;
+    text-align: left;
+}
+
+.sectionone .right {
+    flex: 1;
+    text-align: left;
+}
+
+.sectionone h2 {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.sectionone .right-para {
+    margin-top: 10px;
+    color: #555;
+    padding-bottom: 20px;
+}
+
+.sectionone .section-btn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.learn-more-btn {
+    margin-top: 15px; /* Adjust spacing as needed */
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.learn-more-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.sectionone .section-btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.sectionone-img img {
+    width: 100%;
+    display: block;
+}
+
+/* Styles for the How It Works section */
+.how-it-works {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.step {
+    text-align: center; /* Center text horizontally */
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Set flex-direction to column */
+    align-items: center; /* Center items horizontally */
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.step-content {
+    text-align: center;
+}
+
+.step h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.step p {
+    color: #777;
+    margin: 0; /* Remove default margin */
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.images img {
+    width: 90%; /* Adjust the width as needed */
+    max-height: 600px; /* Adjust the max height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    margin-right: 10px; /* Adjust margin between images */
+    border-radius: 20px;
+    border: 1px solid rgb(210, 210, 210);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
